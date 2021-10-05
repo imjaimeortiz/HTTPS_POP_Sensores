@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="server">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element ref="temperatura"/>
+        <xs:element ref="viento" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="humedad" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="ppm" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="so2" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="o3" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="id" type="xs:integer"/>
+  <xs:element name="temperatura" type="xs:integer"/>
+  <xs:element name="viento" type="xs:integer"/>
+  <xs:element name="humedad" type="xs:integer"/>
+  <xs:element name="ppm" type="xs:integer"/>
+  <xs:element name="so2" type="xs:integer"/>
+  <xs:element name="o3" type="xs:integer"/>
+</xs:schema>
